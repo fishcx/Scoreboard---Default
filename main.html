@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<script
+src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+
+<script type="text/javascript">
+$(function() {
+   
+  $('.score').val(0);
+  
+  $('.add100').click(function(){
+       
+       $('#'+this.id.split("-")[0]+'-score').val(parseInt($('#'+this.id.split("-")[0]+'-score').val())+100);
+       
+  });
+  
+  $('.sub100').click(function(){
+       
+       $('#'+this.id.split("-")[0]+'-score').val(parseInt($('#'+this.id.split("-")[0]+'-score').val())-100);
+       
+  });
+
+
+  $('.reset').click(function(){
+       
+       $('#'+this.id.split("-")[0]+'-score').val(0);
+       
+  });
+  
+});
+
+</script>   
+<style>
+* {
+   font-size: 30px;
+   line-height: 3;
+}
+.score{
+   font-size: 30px;
+}
+.group{
+   font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+
+<div id="main" class="container text-center">
+<div class="row">
+    <div class="col-md-4" style="background-color:lavender;">
+    <table>
+       <th>
+         <div class="input-group text-center">
+             <input type="text" class="form-control input-lg text-center group" placeholder="Phi"><input type="text" class="form-control score input-lg text-center" id="phi-score" val="0">
+         </div>
+       </th>
+       <tr>
+            <td><div class="btn btn-group">
+                 <button type="button" class="btn btn-lg btn-success add100" id="phi-add100">+100</button>  
+                 <button type="button" class="btn btn-lg btn-warning sub100" id="phi-sub100">-100</button>
+                 <button type="button" class="btn btn-lg btn-primary reset" id="phi-reset">Reset</button>
+                 </div>
+           </td>  
+       </tr>
+     </table>
+
+      </div>
+    <div class="col-md-4" style="background-color:lavender;">
+    <table>
+       <th>
+         <div class="input-group text-center">
+             <input type="text" class="form-control input-lg text-center group" placeholder="Tau"><input type="text" class="form-control score input-lg text-center" id="tau-score" val="0">
+         </div>
+       </th>
+       <tr>
+            <td><div class="btn btn-group">
+                 <button type="button" class="btn btn-lg btn-success add100" id="tau-add100">+100</button>  
+                 <button type="button" class="btn btn-lg btn-warning sub100" id="tau-sub100">-100</button>
+                 <button type="button" class="btn btn-lg btn-primary reset" id="tau-reset">Reset</button>
+                 </div>
+           </td>  
+       </tr>
+     </table>
+
+      </div>
+      <div class="col-md-4" style="background-color:lavender;">
+    <table>
+       <th>
+         <div class="input-group text-center">
+             <input type="text" class="form-control input-lg text-center group" placeholder="Pi"><input type="text" class="form-control score input-lg text-center" id="pi-score" val="0">
+         </div>
+       </th>
+       <tr>
+            <td><div class="btn btn-group">
+                 <button type="button" class="btn btn-lg btn-success add100" id="pi-add100">+100</button>  
+                 <button type="button" class="btn btn-lg btn-warning sub100" id="pi-sub100">-100</button>
+                 <button type="button" class="btn btn-lg btn-primary reset" id="pi-reset">Reset</button>
+                 </div>
+           </td>  
+       </tr>
+     </table>
+
+      </div>
+  </div>
+  
+  
+  <div class="row">
+    
+    <div class="col-md-6" style="background-color:lavender;">
+    <table>
+       <th>
+         <div class="input-group text-center">
+             <input type="text" class="form-control input-lg text-center group" placeholder="Alpha"><input type="text" class="form-control score input-lg text-center" id="alpha-score" val="0">
+         </div>
+       </th>
+       <tr>
+            <td><div class="btn-group">
+                 <button type="button" class="btn btn-lg btn-success add100" id="alpha-add100">+100</button>  
+                 <button type="button" class="btn btn-lg btn-warning sub100" id="alpha-sub100">-100</button>
+                 <button type="button" class="btn btn-lg btn-primary reset" id="alpha-reset">Reset</button>
+                 </div>
+           </td>  
+       </tr>
+     </table>
+
+      </div>
+      <div class="col-md-6" style="background-color:lavender;">
+    <table>
+       <th>
+         <div class="input-group text-center">
+             <input type="text" class="form-control input-lg text-center group" placeholder="Sigma"><input type="text" class="form-control score input-lg text-center" id="sigma-score" val="0">
+         </div>
+       </th>
+       <tr>
+            <td><div class="btn btn-group col-m">
+                 <button type="button" class="btn btn-lg btn-success add100" id="sigma-add100">+100</button>  
+                 <button type="button" class="btn btn-lg btn-warning sub100" id="sigma-sub100">-100</button>
+                 <button type="button" class="btn btn-lg btn-primary reset" id="sigma-reset">Reset</button>
+                 </div>
+           </td>  
+       </tr>
+     </table>
+
+      </div>
+  </div>
+  
+  
+  
+  <div class="row">
+    <div class="col-md-4" style="background-color:lavender;">
+    <table>
+       <th>
+         <div class="input-group text-center">
+             <input type="text" class="form-control input-lg text-center group" placeholder="Theta"><input type="text" class="form-control score input-lg text-center" id="theta-score" val="0">
+         </div>
+       </th>
+       <tr>
+            <td><div class="btn-group col-m">
+                 <button type="button" class="btn btn-lg btn-success add100" id="theta-add100">+100</button>  
+                 <button type="button" class="btn btn-lg btn-warning sub100" id="theta-sub100">-100</button>
+                 <button type="button" class="btn btn-lg btn-primary reset" id="theta-reset">Reset</button>
+                 </div>
+           </td>  
+       </tr>
+     </table>
+
+      </div>
+    <div class="col-md-4" style="background-color:lavender;">
+    <table>
+       <th>
+         <div class="input-group text-center">
+             <input type="text" class="form-control input-lg text-center group" placeholder="Epsilon"><input type="text" class="form-control score input-lg text-center" id="epsilon-score" val="0">
+         </div>
+       </th>
+       <tr>
+            <td><div class="btn-group">
+                 <button type="button" class="btn btn-lg btn-success add100" id="epsilon-add100">+100</button>  
+                 <button type="button" class="btn btn-lg btn-warning sub100" id="epsilon-sub100">-100</button>
+                 <button type="button" class="btn btn-lg btn-primary reset" id="epsilon-reset">Reset</button>
+                 </div>
+           </td>  
+       </tr>
+     </table>
+
+      </div>
+      <div class="col-md-4" style="background-color:lavender;">
+    <table>
+       <th>
+         <div class="input-group text-center">
+             <input type="text" class="form-control input-lg text-center group" placeholder="Delta"><input type="text" class="form-control score input-lg text-center" id="delta-score" val="0">
+         </div>
+       </th>
+       <tr>
+            <td><div class="btn-group">
+                 <button type="button" class="btn btn-lg btn-success add100" id="delta-add100">+100</button>  
+                 <button type="button" class="btn btn-lg btn-warning sub100" id="delta-sub100">-100</button>
+                 <button type="button" class="btn btn-lg btn-primary reset" id="delta-reset">Reset</button>
+                 </div>
+           </td>  
+       </tr>
+     </table>
+
+      </div>
+  </div>
+</div>
+
+</body>
